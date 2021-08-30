@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+
+}
+
 .container {
     width: 1150px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

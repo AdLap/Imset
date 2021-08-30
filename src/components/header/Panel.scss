@@ -1,0 +1,46 @@
+@import "../../scss/variables";
+
+.panel {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-start;
+    gap: 50px;
+
+    &__item {
+        font-size: 14px;
+        color: $color-font-second;
+        text-transform: uppercase;
+        position: relative;
+
+        &:nth-of-type(2)::before,
+        &:nth-of-type(2)::after {
+            content: "";
+            display: block;
+            height: 14px;
+            width: 1px;
+            background: $color-font-second;
+            position: absolute;
+            top: 0;
+        }
+
+        &:nth-of-type(2)::before {
+            left: -25px;
+        }
+
+        &:nth-of-type(2)::after {
+            right: -25px;
+        }
+
+        &__phone {
+            font-weight: 900;
+            color: $color-font-accent-first;
+            margin-left: 15px;
+        }
+
+        &__icon {
+            margin-right: 10px;
+        }
+    }
+}
