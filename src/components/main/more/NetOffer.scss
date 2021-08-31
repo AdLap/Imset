@@ -1,0 +1,45 @@
+@import '../../../scss/variables';
+
+.net__offer {
+    position: absolute;
+    bottom: 38px;
+    left: 30px;
+    font-size: 50px;
+    color: $color-font-main;
+    text-transform: uppercase;
+
+    &__title {
+        font-weight: 700;
+    }
+
+    &__desc {
+        font-weight: 300;
+        color: $color-font-accent-second;
+        display: block;
+
+        &::first-letter {
+            color: $color-font-main;
+        }
+
+        &__hbo {
+            font-weight: 900;
+        }
+
+        &__second {
+            font-size: 30px;
+        }
+    }
+
+    &__price {
+        font-size: 30px;
+        font-weight: 900;
+        color: $color-font-more-price;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        &::first-letter {
+            font-size: 100px;
+        }
+    }
+}

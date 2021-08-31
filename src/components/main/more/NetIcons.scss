@@ -1,0 +1,32 @@
+@import "../../../scss/variables";
+
+.net__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 183px;
+    left: 30px;
+
+    &__mouse,
+    &__gift {
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        border: 2px solid $color-font-main;
+    }
+
+    &__mouse {
+        background: url("../../../assets/mouse.svg") no-repeat center/65%;
+    }
+
+    &__gift {
+        background: url("../../../assets/gift.svg") no-repeat center/64%;
+    }
+
+    &__plus {
+        font-size: 18px;
+        color: $color-font-main;
+    }
+}
