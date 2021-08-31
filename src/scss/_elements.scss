@@ -1,3 +1,5 @@
+@import './variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +7,9 @@
 }
 
 body {
-    background: #000;
+    background: $color-body-background;
     font-family: "Roboto", sans-serif;
+    color: $color-font-main;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -15,6 +18,10 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+
+section {
+    padding: 30px;
 }
 
 li {
