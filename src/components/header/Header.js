@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from './Menu';
+import MenuBar from './MenuBar';
 import Panel from './Panel';
 import './Header.scss';
 
@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className='header'>
             <div className='header__container container'>
-                <Menu />
+                <MenuBar />
                 <Panel />
             </div>
         </header>

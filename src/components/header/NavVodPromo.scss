@@ -1,0 +1,71 @@
+@import "../../scss/variables";
+
+.nav__vod__promo {
+    border-top: 1px solid $color-font-menu;
+    border-bottom: 1px solid $color-font-menu;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9px;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 10px 0;
+
+    &__pic {
+        width: 50px;
+        height: 74px;
+        position: relative;
+        overflow: hidden;
+
+        &__img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 900;
+        color: $color-font-accent-first;
+        text-transform: uppercase;
+    }
+
+    &__movie {
+        font-size: 16px;
+        color: $color-font-menu-second-box;
+        text-transform: capitalize;
+        margin-top: 10px;
+    }
+
+    &__type {
+        font-size: 11px;
+        color: $color-font-menu-second-box-type;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+
+    &__price {
+        font-weight: 900;
+        color: $color-font-menu-price;
+        position: relative;
+        margin-top: 10px;
+
+        &::after {
+            content: '';
+            background: url('../../assets/arrow.svg') no-repeat center;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 0;
+            right: 63px;
+        }
+    }
+
+    &__buy {
+        text-transform: uppercase;
+        margin-left: 40px;
+    }
+}

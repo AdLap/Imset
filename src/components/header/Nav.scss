@@ -1,0 +1,62 @@
+@import "../../scss/variables";
+
+.nav {
+    width: 100%;
+    background: $color-background-main;
+    padding: 30px 28px 30px 30px;
+
+    &__group {
+        margin-top: 15px;
+    }
+
+    &__item {
+        font-size: 14px;
+        line-height: 30px;
+        color: $color-font-accent-second;
+        text-align: left;
+        border-bottom: 1px solid $color-menu-border;
+
+        &:first-of-type {
+            border-top: 1px solid $color-menu-border;
+        }
+
+        &__tv,
+        &__net,
+        &__phone,
+        &__mobile {
+            color: $color-font-menu;
+            margin-left: 35px;
+            position: relative;
+        }
+
+        &__tv::before,
+        &__net::before,
+        &__phone::before,
+        &__mobile::before {
+            content: "";
+            display: block;
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -35px;
+        }
+
+        &__tv::before {
+            background: url("../../assets/tv.svg");
+        }
+
+        &__net::before {
+            background: url("../../assets/net.svg");
+        }
+
+        &__phone::before {
+            background: url("../../assets/phone.svg");
+        }
+
+        &__mobile::before {
+            background: url("../../assets/mobile.svg");
+        }
+    }
+}

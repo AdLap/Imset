@@ -1,0 +1,12 @@
+@import '../../scss/variables';
+
+.nav__tv {
+    padding: 30px 54px 35px 30px;
+    background: $color-background-main;
+
+    &__desc {
+        font-size: 14px;
+        color: $color-font-menu;
+        margin-top: 18px;
+    }
+}

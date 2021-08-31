@@ -1,0 +1,13 @@
+@import '../../scss/variables';
+
+.nav__vod {
+    background: $color-background-menu-second;
+    width: 100%;
+    padding: 30px 28px 30px 30px;
+
+    &__desc {
+        font-size: 14px;
+        color: $color-font-menu-second-box;
+        margin-top: 10px;
+    }
+}

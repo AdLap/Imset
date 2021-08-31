@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 7" width="9" height="7">
+	<title>arrow</title>
+	<defs>
+		<image  width="7" height="5" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFAgMAAAD09B5LAAAAAXNSR0IB2cksfwAAAAlQTFRF////LI+9LI+96g0pJQAAAAN0Uk5TAP8AaVI5rAAAABdJREFUeJxjYEhgYJjBEBrCsGoGw6oMABdBA/bfHHrIAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer 49" href="#img1" x="1" y="1" />
+</svg>
