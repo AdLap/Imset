@@ -1,22 +1,22 @@
 import { faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import './VodStat.scss';
+import './Stat.scss';
 
-const VodStat = ({ number }) => {
+const Stat = ({ number, title }) => {
     return (
-        <div className='vod__stat'>
-            <div className='vod__stat__title'>
-                film obejrzy
+        <div className='stat'>
+            <div className='stat__title'>
+                {title}
             </div>
-            <div className='vod__stat__number'>
+            <div className='stat__number'>
                 {number}
             </div>
-            <div className='vod__stat__icon'>
+            <div className='stat__icon'>
                 <FontAwesomeIcon icon={faUserFriends} />
             </div>
         </div>
     );
 }
 
-export default VodStat;
+export default Stat;

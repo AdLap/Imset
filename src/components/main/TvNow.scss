@@ -1,0 +1,32 @@
+@import "../../scss/variables";
+
+.now {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    height: 419px;
+    padding: 0;
+
+    &__title {
+        height: 125px;
+        background: $color-font-accent-first;
+        padding: 30px;
+        line-height: 2.2em;
+        position: relative;
+
+        .stat__title {
+            color: $color-font-main;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 28px;
+            height: 28px;
+            background: $color-font-accent-first;
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+        }
+    }
+}

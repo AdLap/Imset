@@ -1,8 +1,9 @@
 import React from 'react';
 import More from './More';
 import Vod from './Vod';
-import './Main.scss';
 import Offer from './Offer';
+import TvNow from './TvNow';
+import './Main.scss';
 
 const Main = () => {
     return (
@@ -10,6 +11,7 @@ const Main = () => {
             <More />
             <Vod />
             <Offer />
+            <TvNow />
         </main>
     );
 }

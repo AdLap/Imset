@@ -4,9 +4,8 @@ import React, { useState } from 'react';
 import Title from '../utility/Title';
 import VodMovie from './vod/VodMovie';
 import vodOnRequest from '../utility/vodRequest';
+import Stat from '../utility/Stat';
 import './Vod.scss';
-import VodStat from './vod/VodStat';
-
 
 const Vod = () => {
     const [currMovie, setCurrMovie] = useState(vodOnRequest[0])
@@ -25,7 +24,7 @@ const Vod = () => {
                 <FontAwesomeIcon icon={faChevronRight} />
             </div>
             <VodMovie movie={currMovie} />
-            <VodStat number={usersNumber} />
+            <Stat number={usersNumber} title='film obejrzy' />
         </section>
     );
 }
