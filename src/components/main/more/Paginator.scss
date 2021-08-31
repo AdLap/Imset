@@ -1,0 +1,23 @@
+@import '../../../scss/variables';
+
+.paginator {
+    width: 36px;
+    height: 8px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    gap: 6px;
+
+    &__page,
+    &__page-active {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #ffffff66;
+    }
+
+    &__page-active {
+        background: #ffffff;
+    }
+}

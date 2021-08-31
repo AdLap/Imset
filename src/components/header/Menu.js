@@ -4,7 +4,7 @@ import NavVod from './NavVod';
 import NavTv from './NavTv';
 import './Menu.scss';
 
-const Menu = () => {
+const Menu = ({ promo }) => {
     return (
         <div className='menu'>
             <Nav />

@@ -1,0 +1,37 @@
+@import "../../scss/variables";
+
+.vod {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background: url("../../assets/vod-bg.png") no-repeat center/cover;
+    padding: 30px;
+    height: 492px;
+    position: relative;
+
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 900;
+        color: $color-font-main;
+        text-transform: uppercase;
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 41px;
+        color: $color-font-main;
+        font-size: 41px;
+        cursor: pointer;
+    }
+
+    &__prev {
+        left: 30px;
+    }
+
+    &__next {
+        right: 30px;
+    }
+}

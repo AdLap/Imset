@@ -1,0 +1,40 @@
+@import "../../../scss/variables";
+
+.vod__stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.9em;
+    color: $color-font-main;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 90px;
+        background: $color-menu-border;
+        position: absolute;
+        left: -30px;
+        bottom: 0;
+    }
+
+    &__title {
+        font-size: 11px;
+        color: $color-font-vod-stat-title;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__number {
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    &__icon {
+        font-size: 21px;
+    }
+}

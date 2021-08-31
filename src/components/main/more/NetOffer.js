@@ -4,15 +4,15 @@ import './NetOffer.scss';
 const NetOffer = () => {
     return (
         <div className='net__offer'>
-            <span className='net__offer__title'>
+            <div className='net__offer__title'>
                 kup internet,
-            </span>
-            <span className='net__offer__desc'>
+            </div>
+            <div className='net__offer__desc'>
                 a <span className='net__offer__desc__hbo'>hbo</span>go
-            </span>
-            <span className='net__offer__desc__second'>
+            </div>
+            <div className='net__offer__desc__second'>
                 dostaniesz za
-            </span>
+            </div>
             <div className='net__offer__price'>
                 1zł
             </div>
