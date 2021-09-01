@@ -1,0 +1,64 @@
+@import "../../scss/variables";
+
+.promo {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background: $color-background-promo;
+    padding: 30px;
+
+    &__desc {
+        font-size: 16px;
+        margin-top: 21px;
+        width: 305px;
+    }
+
+    &__list {
+        margin-top: 15px;
+
+        &__item {
+            margin-left: 18px;
+            position: relative;
+            line-height: 1.5em;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: -18px;
+                transform: translateY(-50%);
+                background: $color-font-accent-first;
+            }
+        }
+    }
+
+    &__price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: right;
+        line-height: 18px;
+        margin-top: 15px;
+
+        &__slogan {
+            font-size: 18px;
+
+            color: $color-font-accent-first;
+        }
+
+        &__value {
+            font-size: 55px;
+            color: $color-font-accent-second;
+
+            &__cash {
+                font-size: 25px;
+            }
+        }
+    }
+}

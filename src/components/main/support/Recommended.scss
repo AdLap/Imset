@@ -1,0 +1,23 @@
+@import "../../../scss/variables";
+
+.recommended {
+    width: 142px;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+
+    &__text {
+        font-size: 14px;
+        position: relative;
+        text-align: left;
+        line-height: 1.2em;
+        width: 142px;
+
+        &__icon {
+            font-size: 33px;
+            position: absolute;
+            top: 50%;
+            right: -40px;
+            transform: translateY(-50%);
+        }
+    }
+}

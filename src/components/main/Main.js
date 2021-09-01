@@ -3,7 +3,10 @@ import More from './More';
 import Vod from './Vod';
 import Offer from './Offer';
 import TvNow from './TvNow';
+import Promo from './Promo';
+import Support from './Support';
 import './Main.scss';
+
 
 const Main = () => {
     return (
@@ -12,6 +15,8 @@ const Main = () => {
             <Vod />
             <Offer />
             <TvNow />
+            <Promo />
+            <Support />
         </main>
     );
 }

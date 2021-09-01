@@ -3,6 +3,6 @@
  .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 492px 419px 340px;
     grid-row: 2 / 3;
  }
