@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './Service.scss';
 
 const Service = ({ icon, item }) => {

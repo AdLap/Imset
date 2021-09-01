@@ -6,7 +6,6 @@ import mobile from '../../../assets/mobile.svg';
 import Service from './Service';
 import './Package.scss';
 
-
 const Package = () => {
     return (
         <div className='package'>

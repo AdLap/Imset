@@ -1,0 +1,36 @@
+@import "../../scss/variables";
+
+.footer__vectra {
+    text-transform: uppercase;
+
+    &__title {
+        font-size: 14px;
+        color: $color-font-second;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
+
+    }
+
+    &__icon {
+        width: 66px;
+        height: 44px;
+        background: url("../../assets/vectra_icon.svg") no-repeat center/100%;
+    }
+
+    &__app {
+        color: $color-font-accent-second;
+        font-size: 30px;
+        cursor: pointer;
+        line-height: 23px;
+        text-align: left;
+
+        span {
+            font-size: 14px;
+        }
+    }
+}

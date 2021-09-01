@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>phone_01</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #84b82a } 
+	</style>
+	<path id="Forma 1 copy 6" class="shp0" d="M14.14 17.85C11.77 15.47 9.5 12.72 10.58 11.63C12.14 10.08 13.49 9.12 10.74 5.68C7.98 2.25 6.14 4.89 4.64 6.4C2.9 8.14 4.55 14.63 10.95 21.04C17.36 27.45 23.84 29.1 25.58 27.36C27.09 25.85 29.72 24.01 26.29 21.25C22.86 18.5 21.9 19.85 20.35 21.41C19.26 22.5 16.51 20.23 14.14 17.85Z" />
+</svg>

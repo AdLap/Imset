@@ -3,7 +3,6 @@ import Subtitle from '../utility/Subtitle';
 import NavVodPromo from './NavVodPromo';
 import './NavVod.scss';
 
-
 const NavVod = () => {
     return (
         <div className='nav__vod'>

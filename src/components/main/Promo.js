@@ -8,7 +8,7 @@ const Promo = () => {
         <section className='promo'>
             <Title text='pakiet 20 gb lte' color='#84b82a' />
             <MainSubtitle text='promocja' color='#675190' />
-            <p className='promo__desc'>
+            <div className='promo__desc'>
                 Dla tych, którzy nie wyobrażają sobie życia bez Internetu:
                 <ul className='promo__list'>
                     <li className='promo__list__item'>
@@ -24,7 +24,7 @@ const Promo = () => {
                         surfuj swobodnie
                     </li>
                 </ul>
-            </p>
+            </div>
             <div className='promo__price'>
                 <div className='promo__price__slogan'>
                     swoboda<br />i mobilność za

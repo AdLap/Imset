@@ -1,0 +1,52 @@
+@import "../../scss/variables";
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $color-font-second;
+    border-top: 1px solid $color-font-second;
+    width: 800px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    padding-top: 10px;
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        &__item {
+            cursor: pointer;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+
+        &__item {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+
+            &:first-of-type {
+                background: url("../../assets/fb_icon.svg") no-repeat center/contain;
+            }
+
+            &:nth-of-type(2) {
+                background: url("../../assets/tweet_icon.svg") no-repeat center/contain;
+            }
+
+            &:last-of-type {
+                background: url("../../assets/yt_icon.svg") no-repeat center/contain;
+            }
+        }
+    }
+}

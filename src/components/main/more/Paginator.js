@@ -8,7 +8,6 @@ const Paginator = () => {
             <div className='paginator__page'>{null}</div>
             <div className='paginator__page'>{null}</div>
         </div>
-
     );
 }
 

@@ -1,0 +1,17 @@
+@import "../../scss/variables";
+
+.footer {
+    grid-row: 3 / 4;
+    margin-top: 18px;
+    width: 100vw;
+    background: $color-background-main;
+    padding: 10px 0 30px 0;
+
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+}

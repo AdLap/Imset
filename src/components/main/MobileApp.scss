@@ -1,0 +1,44 @@
+@import "../../scss/variables";
+
+.mobile__app {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    background: #ffffff url("../../assets/app_bg.png") no-repeat right bottom/80%;
+    padding: 30px;
+    position: relative;
+
+    &__desc {
+        font-size: 16px;
+        color: $color-font-menu-second-box;
+        margin-top: 20px;
+    }
+
+    &__icons {
+        width: 120px;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+
+        &__item {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+
+            &:first-of-type {
+                background: url("../../assets/andrioid.svg") no-repeat center/contain;
+            }
+
+            &:nth-of-type(2) {
+                background: url("../../assets/apple.svg") no-repeat center/contain;
+            }
+
+            &:last-of-type {
+                background: url("../../assets/windows.svg") no-repeat center/contain;
+            }
+        }
+    }
+}

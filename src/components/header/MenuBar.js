@@ -3,7 +3,6 @@ import Menu from './Menu';
 import './MenuBar.scss';
 import navVodPromoList from '../utility/navVodPromoList';
 
-
 const MenuBar = () => {
     const [isActive, setIsActive] = useState(false);
 

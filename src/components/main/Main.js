@@ -5,8 +5,8 @@ import Offer from './Offer';
 import TvNow from './TvNow';
 import Promo from './Promo';
 import Support from './Support';
+import MobileApp from './MobileApp';
 import './Main.scss';
-
 
 const Main = () => {
     return (
@@ -17,6 +17,7 @@ const Main = () => {
             <TvNow />
             <Promo />
             <Support />
+            <MobileApp />
         </main>
     );
 }
