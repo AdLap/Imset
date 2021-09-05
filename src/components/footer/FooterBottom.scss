@@ -8,11 +8,19 @@
     font-size: 14px;
     color: $color-font-second;
     border-top: 1px solid $color-font-second;
-    width: 800px;
+    width: 100%;
     position: absolute;
-    bottom: -10px;
+    top: -6px;
     left: 0;
-    padding-top: 10px;
+    padding: 40px 30px 0 30px;
+
+    @media screen and (min-width: $laptop) {
+        bottom: -10px;
+        left: 0;
+        top: unset;
+        width: 800px;
+        padding: 10px 0 0 0;
+    }
 
     &__menu {
         display: flex;

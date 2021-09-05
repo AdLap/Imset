@@ -1,11 +1,16 @@
 @import "../../scss/variables";
 
 .mobile__app {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
     background: #ffffff url("../../assets/app_bg.png") no-repeat right bottom/80%;
     padding: 30px;
     position: relative;
+
+    @media screen and (min-width: $laptop) {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
 
     &__desc {
         font-size: 16px;

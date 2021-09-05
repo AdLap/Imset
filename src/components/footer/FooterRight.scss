@@ -1,13 +1,22 @@
 @import "../../scss/variables";
 
 .footer__right {
-    grid-column: 3 / 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     text-transform: uppercase;
     font-size: 14px;
+    position: absolute;
+    top: -215px;
+    right: 123px;
+
+    @media screen and (min-width: $laptop) {
+        grid-column: 3 / 4;
+        position: static;
+        top: unset;
+        right: unset;
+    }
 
     &__title {
         color: $color-font-second;

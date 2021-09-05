@@ -1,9 +1,13 @@
-@import '../../scss/variables';
+@import "../../scss/variables";
 
 .footer__left {
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
+
+    @media screen and (min-width: $laptop) {
+        grid-column: 1 / 3;
+    }
 }

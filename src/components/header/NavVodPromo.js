@@ -5,7 +5,7 @@ import './NavVodPromo.scss';
 const NavVodPromo = () => {
     const [promo] = useState(navVodPromoList);
     const [currPromo, setCurrPromo] = useState({});
-    const idx = Math.floor(Math.random() * (promo.length + 1));
+    const idx = promo.length === 1 ? 0 : Math.floor(Math.random() * (promo.length + 1));
 
     useEffect(() => {
         setCurrPromo(promo[idx]);

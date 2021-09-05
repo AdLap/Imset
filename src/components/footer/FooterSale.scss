@@ -7,6 +7,15 @@
     align-items: flex-end;
     text-transform: uppercase;
     font-size: 14px;
+    position: absolute;
+    top: -390px;
+    right: 119px;
+
+    @media screen and (min-width: $laptop) {
+        position: static;
+        top: unset;
+        right: unset;
+    }
 
     &__title {
         color: $color-font-second;

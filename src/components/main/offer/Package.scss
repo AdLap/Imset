@@ -1,7 +1,14 @@
+@import "../../../scss/variables";
+
 .package {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 60px;
     white-space: pre-wrap;
+
+    @media screen and (min-width: $laptop) {
+        margin-top: 15px;
+        justify-content: space-between;
+    }
 }

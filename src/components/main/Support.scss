@@ -2,9 +2,14 @@
 
 .support {
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     background: url("../../assets/support_bg.png") no-repeat center/cover;
     padding: 30px;
+
+    @media screen and (min-width: $laptop) {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
 
     &__desc {
         display: flex;
@@ -12,6 +17,11 @@
         align-items: center;
         gap: 21px;
         margin-left: -30px;
+        margin-top: 65px;
+
+        @media screen and (min-width: $laptop) {
+            margin-top: 0;
+        }
     }
 
     &__recommended {
