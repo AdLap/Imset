@@ -17,7 +17,7 @@ const More = () => {
         clearInterval(int);
         setCounter(0);
     }
-console.log(counter)
+    
     useEffect(() => {
         const interval = setInterval(() => {
             counter === (content.length - 1) ? reset(interval) : setCounter(counter => counter + 1);
