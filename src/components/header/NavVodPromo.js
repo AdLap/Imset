@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import navVodPromoList from '../utility/navVodPromoList';
+import promoPic from '../../assets/vod_promo_01.png';
 import './NavVodPromo.scss';
 
 const NavVodPromo = () => {
@@ -14,7 +15,7 @@ const NavVodPromo = () => {
     return (
         <div className='nav__vod__promo'>
             <div className='nav__vod__promo__pic'>
-                <img src={currPromo.img} alt={currPromo.movie} className='nav__vod__promo__pic__img' />
+                <img src={promoPic} alt={currPromo.movie} className='nav__vod__promo__pic__img' />
             </div>
             <div className='nav__vod__promo__desc'>
                 <h3 className='nav__vod__promo__title'>

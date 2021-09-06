@@ -9,9 +9,9 @@ const Menu = ({ promo }) => {
     return (
         <motion.div
             className='menu'
-            initial={{x: -500}}
-            animate={{x: 0}}
-            transition={{ duration: .3 }}
+            initial={{y: +1000}}
+            animate={{y: 0}}
+            transition={{ duration: .5 }}
         >
             <Nav />
             <NavVod />

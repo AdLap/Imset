@@ -12,26 +12,26 @@ const More = () => {
         <NetSecond />,
         <NetThird />
     ]);
-    console.log('counter::', counter)
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-           
-    //         if (counter <= 2) {
-    //             setCounter(counter => counter + 1)
-    //         } else {
-    //             setCounter(0)
-    //         }
+    const reset = (int) => {
+        clearInterval(int);
+        setCounter(0);
+    }
 
-    //     }, 2000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            counter === 2 ? reset(interval) : setCounter(counter => counter + 1);
+        }, 3000);
 
-    //     return () => clearInterval(interval);
-    // }, [])
+        return () => clearInterval(interval);
+
+    }, [counter])
 
     return (
+
         <section className='more'>
             {content[counter]}
-            <Paginator />
+            <Paginator nr={counter} />
         </section>
     );
 }
