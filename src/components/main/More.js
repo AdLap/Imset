@@ -17,10 +17,10 @@ const More = () => {
         clearInterval(int);
         setCounter(0);
     }
-
+console.log(counter)
     useEffect(() => {
         const interval = setInterval(() => {
-            counter === 2 ? reset(interval) : setCounter(counter => counter + 1);
+            counter === (content.length - 1) ? reset(interval) : setCounter(counter => counter + 1);
         }, 3000);
 
         return () => clearInterval(interval);
