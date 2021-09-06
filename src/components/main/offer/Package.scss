@@ -10,12 +10,11 @@
     height: 500px;
 
     @media screen and (min-width: $tablet) {
-        margin-top: 60px;
-        height: 100%;
+        margin-top: 15px;
+        height: unset;
     }
 
     @media screen and (min-width: $laptop) {
-        margin-top: 15px;
         justify-content: space-between;
     }
 }

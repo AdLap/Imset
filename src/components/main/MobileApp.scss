@@ -8,7 +8,7 @@
     position: relative;
     width: 100vw;
 
-    @media screen and (min-width: tablet) {
+    @media screen and (min-width: $tablet) {
         grid-row: 4 / 5;
         width: 100%;
     }

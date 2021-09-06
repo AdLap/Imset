@@ -16,11 +16,12 @@
     left: 0;
     padding-top: 15px;
 
-    @media sreen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
         padding: 40px 30px 0 30px;
         top: -6px;
         bottom: 0;
         flex-direction: row;
+        justify-content: space-around;
         gap: unset;
 
     }
@@ -31,6 +32,7 @@
         top: unset;
         width: 800px;
         padding: 10px 0 0 0;
+        justify-content: space-between;
     }
 
     &__menu {
