@@ -1,10 +1,17 @@
 @import "../../scss/variables";
 
 .support {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
     background: url("../../assets/support_bg.png") no-repeat center/cover;
     padding: 30px;
+    width: 100vw;
+
+    @media screen and (min-width: $tablet) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        width: 100%;
+    }
 
     @media screen and (min-width: $laptop) {
         grid-column: 2 / 3;
@@ -15,9 +22,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 21px;
-        margin-left: -30px;
-        margin-top: 65px;
+        gap: 9px;
+        margin-left: -37px;
+        margin-top: 80px;
+
+        @media screen and (min-width: $tablet) {
+            margin-top: 65px;
+            gap: 21px;
+            margin-left: -30px;
+        }
 
         @media screen and (min-width: $laptop) {
             margin-top: 0;
@@ -32,5 +45,10 @@
         text-align: center;
         font-size: 14px;
         color: $color-font-accent-first;
+        margin-top: 70px;
+
+        @media screen and (min-width: $tablet) {
+            margin-top: unset;
+        }
     }
 }

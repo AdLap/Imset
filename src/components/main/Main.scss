@@ -2,14 +2,17 @@
 
 .main {
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(5, 1fr);
-   grid-row: 2 / 3;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(9, 1fr);
 
+   @media screen and (min-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-row: 2 / 3;
+   }
 
    @media screen and (min-width: $laptop) {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 492px 419px 340px;
-      
    }
 }

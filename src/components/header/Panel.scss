@@ -1,12 +1,18 @@
 @import "../../scss/variables";
 
 .panel {
-    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    align-self: flex-start;
-    gap: 50px;
+    gap: 35px;
+    padding-right: 15px;
+
+    @media screen and (min-width: $tablet) {
+        gap: 50px;
+        padding-top: 20px;
+        padding-right: 0;
+        align-self: flex-start;
+    }
 
     &__item {
         font-size: 14px;
@@ -26,11 +32,19 @@
         }
 
         &:nth-of-type(2)::before {
-            left: -25px;
+            left: -22px;
+
+            @media screen and (min-width: $tablet) {
+                left: -25px;
+            }
         }
 
         &:nth-of-type(2)::after {
-            right: -25px;
+            right: -12px;
+
+            @media screen and (mint-width: $tablet) {
+                right: -25px;
+            }
         }
 
         &__phone {
@@ -40,7 +54,19 @@
         }
 
         &__icon {
-            margin-right: 10px;
+            margin-right: 0;
+
+            @media screen and (min-width: $tablet) {
+                margin-right: 10px; 
+            }
+
+            &:last-of-type {
+                margin-left: -10px;
+
+                @media screen and (min-width: $tablet) {
+                    margin-left: 0;
+                }
+            }
         }
     }
 }

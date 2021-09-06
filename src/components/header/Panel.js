@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 import './Panel.scss';
+import { useState } from 'react/cjs/react.development';
 
 const Panel = () => {
+    const [match, setMatch] = useState(window.matchMedia('(min-width: 770px)').matches);
+
+    useEffect(() => {
+        const handleMatch = e => setMatch(e.matches);
+        window.matchMedia('(min-width: 770px)').addListener(handleMatch);
+
+        return () => handleMatch();
+    },[])
+
     return (
         <ul className='panel'>
             <li className='panel__item'>
-                centrum obsługi klienta
+                {match && 'centrum obsługi klienta'}
                 <a href='#' title='CENTRUM OBSŁUGI KLIENTA'>
                     <span className='panel__item__phone'>
                         <span className='panel__item__icon'>
@@ -22,7 +32,7 @@ const Panel = () => {
                     <span className='panel__item__icon'>
                         <FontAwesomeIcon icon={faSearch} />
                     </span>
-                    szukaj
+                    {match && 'szukaj'}
                 </a>
             </li>
             <li className='panel__item'>
@@ -30,7 +40,7 @@ const Panel = () => {
                     <span className='panel__item__icon'>
                         <FontAwesomeIcon icon={faUser} />
                     </span>
-                    strefa abonenta
+                    {match && 'strefa abonenta'}
                 </a>
             </li>
         </ul>

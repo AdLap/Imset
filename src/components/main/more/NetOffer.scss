@@ -38,7 +38,11 @@
         color: $color-font-more-price;
         position: absolute;
         bottom: 0;
-        right: 27px;
+        right: 16px;
+
+        @media screen and (min-width: $tablet) {
+            right: 27px;
+        }
 
         &::first-letter {
             font-size: 115px;

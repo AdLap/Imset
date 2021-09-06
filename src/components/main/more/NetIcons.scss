@@ -6,8 +6,12 @@
     align-items: center;
     gap: 10px;
     position: absolute;
-    bottom: 193px;
+    bottom: 250px;
     left: 30px;
+
+    @media screen and (min-width: $tablet) {
+        bottom: 193px;
+    }
 
     &__mouse,
     &__gift {

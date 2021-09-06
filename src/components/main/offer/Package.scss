@@ -2,10 +2,17 @@
 
 .package {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 50px;
     white-space: pre-wrap;
+    height: 500px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 60px;
+        height: 100%;
+    }
 
     @media screen and (min-width: $laptop) {
         margin-top: 15px;
