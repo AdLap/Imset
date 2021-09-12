@@ -9,7 +9,7 @@ const Panel = () => {
 
     useEffect(() => {
         const handleMatch = e => setMatch(e.matches);
-        window.matchMedia('(min-width: 770px)').addListener(handleMatch);
+        window.matchMedia('(min-width: 770px)').addEventListener('change', handleMatch);
 
         return () => handleMatch();
     },[])
